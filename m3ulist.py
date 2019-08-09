@@ -19,7 +19,7 @@ class PluginName(BeetsPlugin):
 
         # << register default options in to config
         self.config.add()
-        # -- OR --
+        # ?? -- OR --
         config['pluginname'].add()
 
         # << any other initialisation actions
@@ -29,13 +29,15 @@ class PluginName(BeetsPlugin):
 
     # create a file for the new playlist
     # > create_playlist_file()
-        # ?? should this be a temporary file that gets copied/moved to a 'hard' file?
-        # !! when using `with open(file) as file` the file is closed when leaving the `with` block!
+        # ?? should this be a temporary file that gets copied/moved to a 'hard' file once content is complete?
+        # !! when using `with open(file) as file` the file is closed when leaving the `with` block
+        #    ...so this likely wouldn't work if passing the open file back to another function
 
     # generate the playlist file's contents
     # > generate_playlist()
-        # ?? should this simply be written straight in to the file?
-        # ?? do both 'album' and 'item' query results provide the necessary file-paths as attributes?
+        # ?? should this simply be written straight in to the file or compiled in a string-buffer?
+        # ?? do both 'album' and 'item' query result objects provide the necessary file-paths as attributes?
+        #    ...or will I need to query for each item within an album when receiving an album result object?
 
     # save the playlist file
     # > save_playlist()
