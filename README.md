@@ -1,6 +1,6 @@
 # beets-m3u
 A beets plugin to generate M3U playlists
----
+___
 **Proposal for new Beets plugin**
 
 _Name:_	&nbsp; m3ulist
