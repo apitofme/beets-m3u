@@ -1,5 +1,7 @@
 # beets-m3u
 
+!!! ARCHIVED: not worth creating / finishing as work-around via text output is possible in console, plus I don't have the time or sufficient knowledge of Python (yet or ever) !!!
+
 ### Proposal for new Beets plugin
 
 **Name:**	&nbsp; m3ulist
